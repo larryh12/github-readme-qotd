@@ -1,0 +1,19 @@
+name: 'GitHub Readme QotD'
+author: 'Larry Huynh'
+description: 'Automate your GitHub Readme update with a dynamically generated Quote of the Day section.'
+
+inputs:
+  TOKEN:
+    required: true
+    default: ${{ github.token }}
+  REPO:
+    required: false
+    default: ${{ github.repository }}
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+
+branding:
+  icon: 'message-circle'
+  color: 'white'
