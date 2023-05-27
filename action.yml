@@ -15,5 +15,5 @@ runs:
   image: 'Dockerfile'
 
 branding:
-  icon: 'message-circle'
+  icon: 'book-open'
   color: 'white'
