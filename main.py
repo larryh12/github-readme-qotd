@@ -24,7 +24,7 @@ def generate_new_readme(readme: str, quote: str) -> str:
 def get_qotd() -> str:
   date_str = datetime.now().strftime('%A, %B %d, %Y')
   quote_str = f'<blockquote>&ldquo;Today I failed, but tomorrow I will try again. Failure is not the end of the road, but a chance to learn and grow.&rdquo; &mdash; <footer>{date_str}</footer></blockquote>'
-  response = requests.get('https://zenquotes.io/api/today1')
+  response = requests.get('https://zenquotes.io/api/today')
   if response.status_code == 200:
     if response.json()[0]['a'] != 'zenquotes.io':
       quote_str = response.json()[0]['h']
