@@ -8,8 +8,6 @@ A GitHub Actions workflow to automate your repo Readme update with a dynamic Quo
 
 <blockquote>&ldquo;Today I failed, but tomorrow I will try again. Failure is not the end of the road, but a chance to learn and grow.&rdquo; &mdash; <footer>Bing</footer></blockquote>
 
----
-
 ## Get Started
 
 ### Prepare Your Repository
@@ -59,7 +57,7 @@ A GitHub Actions workflow to automate your repo Readme update with a dynamic Quo
 
 4. The option `cron: '0 0 * * *'` set the workflow to run at 00:00 UTC everyday. If you want to change your workflow schedule, please refer to [Cron](https://en.wikipedia.org/wiki/Cron).
 
-### Test Your Set Up _(Optional)_
+## Test Your Set Up _(Optional)_
 
 Now that you have successfully set up your Actions workflow, you can wait for it to execute at 00:00 UTC to see if it's working correctly;
 
@@ -76,8 +74,6 @@ Or you can run it manually at any time to test your set up right away.
 <br/>
 
 ---
-
-<br/>
 
 <details>
 <summary>Inspired from</summary>
