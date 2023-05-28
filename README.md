@@ -6,9 +6,30 @@
 
 A GitHub Actions workflow to automate your repo Readme update with a dynamic Quote of the Day section.
 
-<!--QOTD_STARTS_HERE-->
-<blockquote>&ldquo;To some degree, you control your life by controlling your time.&rdquo; &mdash; <footer>Conrad Hilton</footer></blockquote>
-<!--QOTD_ENDS_HERE-->
+<blockquote>&ldquo;Today I failed, but tomorrow I will try again. Failure is not the end of the road, but a chance to learn and grow.&rdquo; &mdash; <footer>Bing</footer></blockquote>
+
+---
+
+## Get Started
+
+### Prepare Your Repository
+
+1. Generate a new personal access token [here](https://github.com/settings/tokens/new) if you haven't already got one. Make sure the `repo` scope is selected.
+
+   **IMPORTANT: Don't forget to save / copy your token as you won't be able to see it again after leaving the page.**
+
+2. Go to `https://github.com/<your-username>/<your-repo>/settings/secrets/actions/new` to add a new Actions secret.
+
+3. Paste your previously generated token (in step 1) to the `Secret` field and set the `Name` field as `REPO_TOKEN`
+
+### Prepare Your README Markdown
+
+- In your `README.md`, add the following code block to indicate the section to where the quote should be added:
+
+  ```md
+  <!--QOTD_STARTS_HERE-->
+
+  <!--QOTD_ENDS_HERE-->
   ```
 
 ### Set Up GitHub Actions Workflow
@@ -50,7 +71,7 @@ Or you can run it manually at any time to test your set up right away.
 
 3. You should see a notification saying `This workflow has a workflow_dispatch event trigger`. And you should now be able to click on the `Run workflow` button to run it manually.
 
-4. You can check the run log of [this repo](https://github.com/larryh12/github-readme-qotd/actions/workflows/main.yml) to see examples of `Success` or `Failure` runs.
+4. You can check the run log of [my repo](https://github.com/larryh12/larryh12/actions/workflows/main.yml) to see examples of `Success` or `Failure` runs.
 
 <br/>
 
