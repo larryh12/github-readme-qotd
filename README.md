@@ -6,7 +6,7 @@
 
 A GitHub Actions workflow to automate your repo Readme update with a dynamic Quote of the Day section.
 
-<blockquote>&ldquo;Today I failed, but tomorrow I will try again. Failure is not the end of the road, but a chance to learn and grow.&rdquo; &mdash; <footer>Bing</footer></blockquote>
+<blockquote>&ldquo;Be the change that you wish to see in the world.&rdquo; &mdash; <footer>Mahatma Gandhi</footer></blockquote>
 
 ## Get Started
 
