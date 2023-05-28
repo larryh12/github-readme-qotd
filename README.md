@@ -7,31 +7,8 @@
 A GitHub Actions workflow to automate your repo Readme update with a dynamic Quote of the Day section.
 
 <!--QOTD_STARTS_HERE-->
-
+<blockquote>&ldquo;To some degree, you control your life by controlling your time.&rdquo; &mdash; <footer>Conrad Hilton</footer></blockquote>
 <!--QOTD_ENDS_HERE-->
-
----
-
-## Get Started
-
-### Prepare Your Repository
-
-1. Generate a new personal access token [here](https://github.com/settings/tokens/new) if you haven't already got one. Make sure the `repo` scope is selected.
-
-   **IMPORTANT: Don't forget to save / copy your token as you won't be able to see it again after leaving the page.**
-
-2. Go to `https://github.com/<your-username>/<your-repo>/settings/secrets/actions/new` to add a new Actions secret.
-
-3. Paste your previously generated token (in step 1) to the `Secret` field and set the `Name` field as `REPO_TOKEN`
-
-### Prepare Your README Markdown
-
-- In your `README.md`, add the following code block to indicate the section to where the quote should be added:
-
-  ```md
-  <!--QOTD_STARTS_HERE-->
-
-  <!--QOTD_ENDS_HERE-->
   ```
 
 ### Set Up GitHub Actions Workflow
