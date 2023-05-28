@@ -1,6 +1,6 @@
 name: 'GitHub Readme QotD'
 author: 'Larry Huynh'
-description: 'Automate your GitHub Readme update with a dynamically generated Quote of the Day section.'
+description: 'GitHub Actions workflow to automate your repo Readme update with a dynamic Quote of the Day section.'
 
 inputs:
   TOKEN:
@@ -15,5 +15,5 @@ runs:
   image: 'Dockerfile'
 
 branding:
-  icon: 'book-open'
-  color: 'white'
+  icon: 'type'
+  color: 'gray-dark'
