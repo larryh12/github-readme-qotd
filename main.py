@@ -48,4 +48,4 @@ if __name__ == '__main__':
 
   new_readme = generate_new_readme(readme=readme_content_decoded, quote=qotd)
 
-  readme_repo.update_file(path=readme_obj.path, message='Update quote of the day', content=new_readme, sha=readme_obj.sha)
+  readme_repo.update_file(path=readme_obj.path, message='Update Quote of the Day', content=new_readme, sha=readme_obj.sha)
