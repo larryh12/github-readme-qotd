@@ -18,7 +18,7 @@ A GitHub Actions workflow to automate your repo Readme update with a dynamic Quo
 
 2. Go to `https://github.com/<your-username>/<your-repo>/settings/secrets/actions/new` to add a new Actions secret.
 
-3. Paste your previously generated token (in step 1) to the `Secret` field and set the `Name` field as `REPO_TOKEN`
+3. Paste your previously generated token (in step 1) to the `Secret` field and set the `Name` field as `REPO_TOKEN_QOTD`
 
 ### Prepare Your README Markdown
 
