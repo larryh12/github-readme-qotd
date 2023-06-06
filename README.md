@@ -52,7 +52,7 @@ A GitHub Actions workflow to automate your repo Readme update with a dynamic Quo
        steps:
          - uses: larryh12/github-readme-qotd@main
            with:
-             TOKEN: ${{ secrets.REPO_TOKEN }}
+             TOKEN: ${{ secrets.REPO_TOKEN_QOTD }}
    ```
 
 4. The option `cron: '0 0 * * *'` set the workflow to run at 00:00 UTC everyday. If you want to change your workflow schedule, please refer to [Cron](https://en.wikipedia.org/wiki/Cron).
