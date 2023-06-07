@@ -1,6 +1,6 @@
 # GitHub Readme QotD
 
-![thumbnail](docs/thumbnail.png)
+![og](docs/_og.png)
 
 ---
 
@@ -18,7 +18,7 @@ A GitHub Actions workflow to automate your repo Readme update with a dynamic Quo
 
 2. Go to `https://github.com/<your-username>/<your-repo>/settings/secrets/actions/new` to add a new Actions secret.
 
-3. Paste your previously generated token (in step 1) to the `Secret` field and set the `Name` field as `REPO_TOKEN_QOTD`
+3. Paste your previously generated token (in step 1) to the `Secret` field and set the `Name` field as `REPO_TOKEN`
 
 ### Prepare Your README Markdown
 
@@ -47,12 +47,12 @@ A GitHub Actions workflow to automate your repo Readme update with a dynamic Quo
        - cron: '0 0 * * *'
 
    jobs:
-     update-readme-qotd:
+     github-readme-qotd:
        runs-on: ubuntu-latest
        steps:
          - uses: larryh12/github-readme-qotd@main
            with:
-             TOKEN: ${{ secrets.REPO_TOKEN_QOTD }}
+             TOKEN: ${{ secrets.REPO_TOKEN }}
    ```
 
 4. The option `cron: '0 0 * * *'` set the workflow to run at 00:00 UTC everyday. If you want to change your workflow schedule, please refer to [Cron](https://en.wikipedia.org/wiki/Cron).
@@ -69,7 +69,7 @@ Or you can run it manually at any time to test your set up right away.
 
 3. You should see a notification saying `This workflow has a workflow_dispatch event trigger`. And you should now be able to click on the `Run workflow` button to run it manually.
 
-4. You can check the run log of [my repo](https://github.com/larryh12/larryh12/actions/workflows/main.yml) to see examples of `Success` or `Failure` runs.
+4. You can check for examples in [my repo](https://github.com/larryh12/larryh12/actions/workflows/main.yml) workflow history.
 
 <br/>
 
@@ -78,7 +78,7 @@ Or you can run it manually at any time to test your set up right away.
 <details>
 <summary>Inspired from</summary>
 
-[siddharth2016/quote-readme](https://github.com/siddharth2016/quote-readme) |
-[cheehwatang/github-readme-daily-quotes](https://github.com/cheehwatang/github-readme-daily-quotes) |
+- [siddharth2016/quote-readme](https://github.com/siddharth2016/quote-readme)
+- [cheehwatang/github-readme-daily-quotes](https://github.com/cheehwatang/github-readme-daily-quotes)
 
 </details>
