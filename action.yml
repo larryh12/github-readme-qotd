@@ -1,6 +1,6 @@
 name: 'GitHub Readme QotD'
 author: 'Larry Huynh'
-description: 'GitHub Actions workflow to automate your repo Readme update with a dynamic Quote of the Day section.'
+description: 'A GitHub Actions workflow to automate your repo Readme update with a dynamic Quote of the Day section.'
 
 inputs:
   TOKEN:
